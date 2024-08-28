@@ -1,0 +1,242 @@
+{% load static %}
+{% url "home" as home %}
+{% url "news" as news %}
+{% url "product" as product %}
+{% url "about" as about %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'maincss/output.css' %}">
+    <link rel="stylesheet" href="{% static 'maincss/flowbite.css' %}">
+    <link rel="stylesheet" href="{% static "maincss/swiper-bundle.css" %}">
+    <title>Zeynep</title>
+</head>
+
+<body>
+    <section>
+        <div class="bg-[#000000]">
+            <div>
+                <!-- component -->
+                <nav>
+                    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                        <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                            <div
+                                class="bg-[url('../assets/images/zeynep.png')] bg-[50%_50%] bg-cover bg-no-repeat w-[96px] h-[52px]">
+                            </div>
+                        </a>
+
+                        <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+                            <button type="button" data-dropdown-toggle="language-dropdown-menu"
+                                class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm uppercase text-[#CA9A37] rounded-lg cursor-pointer">
+                                <img src="https://cdn-icons-png.flaticon.com/512/197/197416.png"
+                                                    alt="Uzbek Flag" class="h-3.5 w-3.5 rounded-full me-2">
+                                UZ
+                            </button>
+                            <!-- Dropdown -->
+                            <div class="z-50 hidden my-4 text-base bg-gray-700 list-none divide-y divide-gray-100 rounded-lg shadow-2xl"
+                                id="language-dropdown-menu">
+                                <ul class="py-2 font-medium" role="none">
+                                    <li>
+                                        <a href="#" class="block px-4 py-2 text-sm text-[#CA9A37] " role="menuitem">
+                                            <div class="inline-flex items-center">
+                                                <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full me-2"
+                                                    xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us"
+                                                    viewBox="0 0 512 512">
+                                                    <g fill-rule="evenodd">
+                                                        <g stroke-width="1pt">
+                                                            <path fill="#bd3d44"
+                                                                d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
+                                                                transform="scale(3.9385)" />
+                                                            <path fill="#fff"
+                                                                d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
+                                                                transform="scale(3.9385)" />
+                                                        </g>
+                                                        <path fill="#192f5d" d="M0 0h98.8v70H0z"
+                                                            transform="scale(3.9385)" />
+                                                        <path fill="#fff"
+                                                            d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z"
+                                                            transform="scale(3.9385)" />
+                                                    </g>
+                                                </svg>
+                                                English
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="block px-4 py-2 text-sm text-[#CA9A37] " role="menuitem">
+                                            <div class="inline-flex items-center">
+                                                <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+                                                    <path fill="#ffffff" d="M0 0h640v160H0z" />
+                                                    <path fill="#0000ff" d="M0 160h640v160H0z" />
+                                                    <path fill="#ff0000" d="M0 320h640v160H0z" />
+                                                </svg>
+                                                Русский
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="block px-4 py-2 text-sm text-[#CA9A37] " role="menuitem">
+                                            <div class="inline-flex items-center">
+                                                <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path fill="#e30a17" d="M0 0h512v512H0z" />
+                                                    <circle fill="#fff" cx="188" cy="256" r="100" />
+                                                    <circle fill="#e30a17" cx="188" cy="256" r="75" />
+                                                    <circle fill="#fff" cx="352" cy="256" r="75" />
+                                                </svg>
+                                                Türk
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="block px-4 py-2 text-sm text-[#CA9A37] " role="menuitem">
+                                            <div class="inline-flex items-center">
+                                                <img src="https://cdn-icons-png.flaticon.com/512/197/197416.png"
+                                                    alt="Uzbek Flag" class="h-3.5 w-3.5 rounded-full me-2">
+                                                Uzbek
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button data-collapse-toggle="navbar-language" type="button"
+                                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                                aria-controls="navbar-language" aria-expanded="false">
+                                <span class="sr-only">Open main menu</span>
+                                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 17 14">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+                            id="navbar-language">
+                            <ul
+                                class="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                                <li>
+                                    <a href="{{ home }}"
+                                        class="block py-2 {% if request.path == home %}md:border-b-4 md:border-[#CA9A37]{% endif %} uppercase px-3 md:text-sm text-[#CA9A37] decoration-sky-500 md:bg-transparent md:p-0"
+                                        aria-current="page">Bosh Sahifa</a>
+                                </li>
+                                <li>
+                                    <a href="{{ product }}"
+                                        class="block py-2 {% if request.path == product %}md:border-b-4 md:border-[#CA9A37]{% endif %} px-3 md:text-sm uppercase md:p-0 text-[#CA9A37] md:hover:bg-transparent">Mahsulotlar
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ news }}"
+                                        class="block py-2 {% if request.path == news %}md:border-b-4 md:border-[#CA9A37]{% endif %} px-3 md:text-sm uppercase md:p-0 text-[#CA9A37] md:hover:bg-transparent">Yangiliklar</a>
+                                </li>
+                                <li>
+                                    <a href="{{ about }}"
+                                        class="block py-2 {% if request.path == about %}md:border-b-4 md:border-[#CA9A37]{% endif %} px-3 md:text-sm uppercase md:p-0 text-[#CA9A37] md:hover:bg-transparent">Biz
+                                        Haqimizda</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </nav>
+                {% if request.path == home %}
+                <div style="margin-top: 475px; background-image: url('{% static 'assets/images/image.jpeg' %}')"
+                    class="hidden md:block bg-center bg-cover bg-no-repeat w-full h-[400px] md:h-[620px] lg:h-[720px] xl:h-[820px]">
+                    <!-- Bu yerda kontentingiz -->
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        {% if request.path == home %}
+        <div style="background-image: url('{% static '/assets/images/zeynep.png' %}')"
+            class="hidden md:block bg-center bg-cover bg-no-repeat absolute left-[50%] top-[219px] translate-x-[-50%] w-full max-w-[909px] h-[300px] md:h-[400px] lg:h-[494px]">
+        </div>
+        {% endif %}
+        </div>
+    </section>
+
+
+
+    {% block content %}
+
+    {% endblock content %}
+
+
+    <div
+        class="flex flex-col lg:flex-row justify-center py-14 items-center mx-[77.7px] space-y-8 lg:space-x-[15px] lg:space-y-0">
+        <!-- Birinchi ustun -->
+        <div class="flex flex-col items-center space-y-4 mx-12 w-full max-w-md">
+            <div class="flex items-center space-x-4 w-full">
+                <div class="flex-shrink-0 w-1/6">
+                    <img class="w-12 h-12 rotate-[150deg]" src="{% static "/assets/vectors/vector_1_x2.svg" %}" alt="Vector 1" />
+                </div>
+                <span class="flex-grow text-xl font-bold text-[#CA9A37]">+998 90 016-04-01</span>
+            </div>
+            <div class="flex items-center space-x-4 w-full">
+                <div class="flex-shrink-0 w-1/6">
+                    <img class="w-12 h-12" src="{% static "/assets/vectors/logostelegram_x2.svg" %}" alt="Telegram Logo" />
+                </div>
+                <span class="flex-grow text-xl font-bold text-[#CA9A37]">+998 90 016-04-01</span>
+            </div>
+            <div class="flex items-center space-x-4 w-full">
+                <div class="flex-shrink-0 w-1/6">
+                    <img class="w-12 h-12" src="{% static "/assets/vectors/group_x2.svg" %}" alt="Group" />
+                </div>
+                <span class="flex-grow uppercase text-xl font-bold text-[#CA9A37]">zeynep_triko</span>
+            </div>
+        </div>
+
+
+        <!-- To'rtinchi ustun -->
+        <div
+            class="relative flex p-[87px_5px_136px_0] w-full max-w-md h-[260px] rounded-[30px] bg-white overflow-hidden">
+            <iframe class="absolute top-0 left-0 w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58814.020690037755!2d69.16066304925744!3d41.31108130853159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef7e3ad058477%3A0x2d1e4f6c5e0ff832!2sTashkent%2C%20Uzbekistan!5e0!3m2!1sen!2sus!4v1694732357680!5m2!1sen!2sus"
+                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <img class="absolute bottom-0 right-0 w-[23px] h-[37px]" src="{% static "/assets/vectors/vector_x2.svg" %}"
+                alt="Vector" />
+        </div>
+    </div>
+
+
+    <script src="{% static "mainjs/swiper-bundle.js" %}"></script>
+    <script src="{% static "mainjs/flowbite.js" %}"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            slidesPerView: 2,  // Ekranda bir vaqtning o'zida 3 ta slayd ko'rinadi
+            spaceBetween: 10,  // Slaydlar orasidagi masofa
+            centeredSlides: true,  // O'rtadagi slaydni markazlashtirish
+            loop: true,
+            effect: 'coverflow',  // Coverflow effekti
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 100,
+                depth: 300,
+                modifier: 1,
+                slideShadows: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 8000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+</body>
+
+</html>

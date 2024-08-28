@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<section class="w-full mx-auto">
+  <!-- col-2 -->
+  <div
+    class="xl:w-[80%] sm:w-[85%] xs:w-[90%] mx-auto flex flex-col md:flex-row lg:gap-4 xs:gap-2 justify-center items-center lg:items-stretch mt-6">
+    <!-- Kichik ekranlar uchun tasvir -->
+    <div class="w-full md:hidden">
+      <img class="rounded-sm w-4/5 mx-auto" src="{% static '/assets/images/a_69871.jpeg' %}" alt="billboard image" />
+    </div>
+    <!-- Matn qismi -->
+    <div class="lg:w-[50%] w-full md:p-4 rounded-md px-4">
+      <p class="font-normal text-[20px] uppercase text-[#CA9A37] text-justify">
+        zeynep triko 7 yildan ortiq vaqtdan beri to'qimachilik sanoatida yetakchi kompaniya bo'lib xizmat qilmoqda.
+        tashkilotimiz o'zining mukammal mahorati, innovatsion dizaynlari va mijozlar ehtiyojini qondirishga
+        qaratilganligi bilan mashhur.
+        zeynep triko bilan yaqinroq tanishishingiz uchun mana bu tafsilotlarni havola etamiz.
+      </p>
+    </div>
+    <!-- Katta ekranlar uchun tasvir -->
+    <div class="hidden md:block lg:w-[50%] w-full">
+      <img class="rounded-sm w-4/5 mx-auto" src="{% static '/assets/images/a_69871.jpeg' %}" alt="billboard image" />
+    </div>
+  </div>
+
+  <div
+    class="xl:w-[80%] sm:w-[85%] xs:w-[90%] mx-auto flex flex-col md:flex-row lg:gap-4 xs:gap-2 justify-center items-center lg:items-stretch mt-4 md:-translate-y-20">
+    <!-- Tasvir qismi -->
+    <div class="w-full md:w-[50%]">
+      <img class="rounded-sm w-4/5 mx-auto" src="{% static '/assets/images/a_70531.jpeg' %}" alt="billboard image" />
+    </div>
+    <!-- Matn qismi -->
+    <div class="lg:w-[50%] w-full md:p-4 p-2 rounded-md">
+      <p class="font-normal text-[20px] uppercase text-[#CA9A37] text-justify">
+        zeynep triko 7 yildan ortiq vaqtdan beri
+        to'qimachilik sanoatida yetakchi kompaniya
+        bo'lib xizmat qilmoqda. tashkilotimiz o'zining
+        mukammal mahorati, innovatsion dizaynlari
+        va mijozlar ehtiyojini qondirishga
+        qaratilganligi bilan mashhur. zeynep triko
+        bilan yaqinroq tanishishingiz uchun mana bu
+        tafsilotlarni havola etamiz.
+      </p>
+    </div>
+  </div>
+
+  <div
+    class="xl:w-[80%] sm:w-[85%] xs:w-[90%] mx-auto flex flex-col md:flex-row lg:gap-4 xs:gap-2 justify-center items-center lg:items-stretch mt-6 md:-translate-y-40">
+    <!-- Kichik ekranlar uchun tasvir -->
+    <div class="w-full md:hidden">
+      <img class="rounded-sm w-4/5 mx-auto" src="{% static '/assets/images/a_65891.jpeg' %}" alt="billboard image" />
+    </div>
+    <!-- Matn qismi -->
+    <div class="lg:w-[50%] w-full md:p-4 p-2 rounded-md">
+      <p class="font-normal text-[20px] uppercase text-[#CA9A37] text-justify">
+        Bizning vazifamiz mijozlarimizga eng
+        yuqori darajadagi xizmat ko'rsatish va
+        to'qimachilik mahsulotlarida
+        mukammallikni targ'ib qilishdir. Bizning
+        maqsadimiz barqaror va ekologik toza
+        yechimlar bilan Markaziy Osiyo va butun
+        dunyoda tanilgan kompaniyaga aylanishdir.
+      </p>
+    </div>
+    <!-- Katta ekranlar uchun tasvir -->
+    <div class="hidden md:block lg:w-[50%] w-full">
+      <img class="rounded-sm w-4/5 mx-auto" src="{% static '/assets/images/a_65891.jpeg' %}" alt="billboard image" />
+    </div>
+  </div>
+</section>
+
+
+<div class="bg-[url('../assets/images/a_70331.jpeg')] bg-center bg-cover bg-no-repeat relative flex w-full h-screen">
+  <div
+    class="bg-[url('../assets/images/zeynep.png')] bg-center bg-cover bg-no-repeat w-[200px] h-[100px] absolute right-0 top-0 m-4">
+  </div>
+</div>
+
+
+<div class="text-center mt-32 pt-8">
+  <h1 class="text-4xl font-semibold py-5 text-[#CA9A37]">BIZNING MAHSULOTLARIMIZ:</h1>
+  <h1 class="text-4xl font-semibold py-5 mt-4 text-[#CA9A37]">KARDIGAN, TROYKA</h1>
+  <div class="swiper-container mx-auto overflow-hidden relative w-full">
+    <div class="swiper-wrapper py-14">
+      <div class="swiper-slide width-4/5">
+        <img class="rounded-sm" src="{% static '/assets/images/a_65891.jpeg' %}" alt="Mahsulot 1">
+      </div>
+      <div class="swiper-slide width-4/5">
+        <img class="rounded-sm" src="{% static '/assets/images/a_66881.jpeg' %}" alt="Mahsulot 2">
+      </div>
+      <div class="swiper-slide width-4/5">
+        <img class="rounded-sm" src="{% static '/assets/images/a_67141.jpeg' %}" alt="Mahsulot 3">
+      </div>
+      <div class="swiper-slide width-4/5">
+        <img class="rounded-sm" src="{% static '/assets/images/a_70771.jpeg' %}" alt="Mahsulot 4">
+      </div>
+      <div class="swiper-slide width-4/5">
+        <img class="rounded-sm" src="{% static '/assets/images/a_73291.jpeg' %}" alt="Mahsulot 5">
+      </div>
+    </div>
+
+    <!-- Slayder navigatsiyasi -->
+    <div class="swiper-button-next" style="color:#CA9A37;"></div>
+    <div class="swiper-button-prev" style="color:#CA9A37;"></div>
+  </div>
+</div>
+<div class="text-center">
+  <h1 class="text-4xl font-semibold py-5 text-[#CA9A37]">TROYKA, DVOYKA</h1>
+  <div class="swiper-container mx-auto overflow-hidden relative w-full">
+    <div class="swiper-wrapper py-14">
+      <div class="swiper-slide width-4/5">
+        <img src="{% static '/assets/images/a_65891.jpeg' %}" alt="Mahsulot 1">
+      </div>
+      <div class="swiper-slide width-4/5">
+        <img src="{% static '/assets/images/a_66881.jpeg' %}" alt="Mahsulot 2">
+      </div>
+      <div class="swiper-slide width-4/5">
+        <img src="{% static '/assets/images/a_67141.jpeg' %}" alt="Mahsulot 3">
+      </div>
+      <div class="swiper-slide width-4/5">
+        <img src="{% static '/assets/images/a_70771.jpeg' %}" alt="Mahsulot 4">
+      </div>
+      <div class="swiper-slide width-4/5">
+        <img src="{% static '/assets/images/a_73291.jpeg' %}" alt="Mahsulot 5">
+      </div>
+    </div>
+
+    <!-- Slayder navigatsiyasi -->
+    <div class="swiper-button-next" style="color:#CA9A37;"></div>
+    <div class="swiper-button-prev" style="color:#CA9A37;"></div>
+  </div>
+</div>
+
+
+<div class="text-center px-14 py-4 font-bold text-[20px] uppercase text-[#CA9A37]">
+  Zeynep Trikoning 2024-2025 kuz/qish mavsumining ochilish marosimida bizni hurmat qilgan aziz do'stlarimizga va
+  qadrli Zeynep trikotaj xodimlariga o'z minnatdorchiligimni bildiraman
+</div>
+
+
+
+
+{% endblock content %}
