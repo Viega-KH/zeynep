@@ -17,7 +17,7 @@ urlpatterns = [
 
 
 urlpatterns += i18n_patterns(
-    path('i18n/', include('django.conf.urls.i18n'), name='set_language'),
+    path('i18n/', include('django.conf.urls.i18n')),
     path('', include('home.urls')),
     path('', include('news.urls')),
     path('', include('product.urls')),

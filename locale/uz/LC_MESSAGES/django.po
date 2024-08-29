@@ -1,0 +1,244 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-29 20:27+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+#: .\config\settings.py:135
+msgid "English"
+msgstr ""
+
+#: .\config\settings.py:136
+msgid "Russian"
+msgstr ""
+
+#: .\config\settings.py:137
+msgid "Uzbek"
+msgstr ""
+
+#: .\config\settings.py:138
+msgid "Turkish"
+msgstr ""
+
+#: .\contact\apps.py:7 .\contact\apps.py:8
+msgid "Contact"
+msgstr ""
+
+#: .\contact\models.py:5 .\resurs\base.html:204
+msgid "Location"
+msgstr ""
+
+#: .\contact\models.py:6
+msgid "Telegram"
+msgstr ""
+
+#: .\contact\models.py:7 .\resurs\base.html:184
+msgid "Instagram"
+msgstr ""
+
+#: .\contact\models.py:8 .\contact\models.py:9
+msgid "Call"
+msgstr ""
+
+#: .\contact\models.py:12 .\contact\models.py:13
+msgid "Link"
+msgstr ""
+
+#: .\news\apps.py:7 .\news\apps.py:8
+msgid "Information"
+msgstr ""
+
+#: .\news\models.py:7 .\product\models.py:6
+msgid "Name"
+msgstr ""
+
+#: .\news\models.py:10 .\news\models.py:11 .\news\models.py:20
+#: .\product\models.py:9 .\product\models.py:10 .\product\models.py:23
+msgid "Category"
+msgstr ""
+
+#: .\news\models.py:18 .\product\models.py:22
+msgid "Title"
+msgstr ""
+
+#: .\news\models.py:19
+msgid "Body"
+msgstr ""
+
+#: .\news\models.py:21 .\product\models.py:24
+msgid "Image"
+msgstr ""
+
+#: .\news\models.py:22 .\product\models.py:25
+msgid "Publish Date"
+msgstr ""
+
+#: .\news\models.py:23 .\product\models.py:26
+msgid "Created"
+msgstr ""
+
+#: .\news\models.py:24 .\product\models.py:27
+msgid "Updated"
+msgstr ""
+
+#: .\news\models.py:27 .\news\models.py:28 .\resurs\base.html:141
+#: .\resurs\pages\news.html:9
+msgid "News"
+msgstr ""
+
+#: .\product\apps.py:7 .\product\apps.py:8 .\product\models.py:30
+#: .\product\models.py:31
+msgid "Products"
+msgstr ""
+
+#: .\product\models.py:18
+msgid "Draft"
+msgstr ""
+
+#: .\product\models.py:19
+msgid "Published"
+msgstr ""
+
+#: .\resurs\base.html:130
+msgid "Home"
+msgstr ""
+
+#: .\resurs\base.html:135
+msgid "Product"
+msgstr ""
+
+#: .\resurs\base.html:146
+msgid "About Us"
+msgstr ""
+
+#: .\resurs\base.html:185
+msgid "Follow us"
+msgstr ""
+
+#: .\resurs\base.html:194
+msgid "Phone"
+msgstr ""
+
+#: .\resurs\base.html:195
+msgid "Contact us"
+msgstr ""
+
+#: .\resurs\base.html:205
+msgid "Find us at our office"
+msgstr ""
+
+#: .\resurs\base.html:207
+msgid "Toshkent"
+msgstr ""
+
+#: .\resurs\include\new.html:18
+msgid "Sana"
+msgstr ""
+
+#: .\resurs\pages\about.html:18
+msgid ""
+"\n"
+"                zeynep triko has been a leading company in the textile "
+"industry for more than 7 years is doing Our organization is committed to its "
+"excellent craftsmanship, innovative designs and customer satisfaction known "
+"for its focus. Here are the details for you to get to know Zeynep Triko "
+"better.\n"
+"                "
+msgstr ""
+
+#: .\resurs\pages\about.html:40
+msgid ""
+"\n"
+"                ZEYNEP knitwear company was founded in 2016 by a promising "
+"and experienced entrepreneur. Since our establishment, we have implemented "
+"countless successful projects and become one of the most important companies "
+"in the industry. We are proud of our history, quality and experience.\n"
+"                "
+msgstr ""
+
+#: .\resurs\pages\about.html:57
+msgid ""
+"\n"
+"                Our mission is to our customers high level of service and in "
+"textiles is to promote excellence. Ours our goal is sustainable and "
+"environmentally friendly Central Asia and the whole with solutions to become "
+"a world-renowned company.\n"
+"                "
+msgstr ""
+
+#: .\resurs\pages\about.html:79 .\resurs\pages\home.html:84
+msgid "OUR PRODUCTS:"
+msgstr ""
+
+#: .\resurs\pages\about.html:80 .\resurs\pages\home.html:85
+msgid "KARDIGAN, TROYKA"
+msgstr ""
+
+#: .\resurs\pages\about.html:106 .\resurs\pages\home.html:111
+msgid "TROYKA, DVOYKA"
+msgstr ""
+
+#: .\resurs\pages\about.html:134 .\resurs\pages\home.html:139
+msgid ""
+"\n"
+"    To our dear friends who honored us at the opening ceremony of Zeynep "
+"Triko's 2024-2025 fall/winter season and\n"
+"    I express my gratitude to the dear Zeynep knitwear staff\n"
+"    "
+msgstr ""
+
+#: .\resurs\pages\home.html:17
+msgid ""
+"\n"
+"                zeynep triko has been a leading company in the textile "
+"industry for more than 7 years is doing Our\n"
+"                organization is committed to its excellent craftsmanship, "
+"innovative designs and customer satisfaction\n"
+"                known for its focus. Here are the details for you to get to "
+"know Zeynep Triko better.\n"
+"                "
+msgstr ""
+
+#: .\resurs\pages\home.html:41
+msgid ""
+"\n"
+"                ZEYNEP knitwear company was founded in 2016 by a promising "
+"and experienced entrepreneur. Since our\n"
+"                establishment, we have implemented countless successful "
+"projects and become one of the most important\n"
+"                companies in the industry. We are proud of our history, "
+"quality and experience.\n"
+"                "
+msgstr ""
+
+#: .\resurs\pages\home.html:60
+msgid ""
+"\n"
+"                Our mission is to our customers high level of service and in "
+"textiles is to promote excellence. Ours our\n"
+"                goal is sustainable and environmentally friendly Central "
+"Asia and the whole with solutions to become a\n"
+"                world-renowned company.\n"
+"                "
+msgstr ""
+
+#: .\resurs\pages\news.html:12
+msgid "Search"
+msgstr ""
+
+#: .\resurs\pages\product.html:8
+msgid "PRODUCTS"
+msgstr ""

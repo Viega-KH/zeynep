@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block content %}
 <section class="w-full mx-auto">
@@ -14,11 +15,9 @@
         <!-- Matn qismi -->
         <div class="lg:w-[50%] w-full md:p-4 rounded-md px-4">
             <p class="font-normal text-[20px] uppercase text-[#CA9A37] text-justify">
-                zeynep triko 7 yildan ortiq vaqtdan beri to'qimachilik sanoatida yetakchi kompaniya bo'lib xizmat
-                qilmoqda.
-                tashkilotimiz o'zining mukammal mahorati, innovatsion dizaynlari va mijozlar ehtiyojini qondirishga
-                qaratilganligi bilan mashhur.
-                zeynep triko bilan yaqinroq tanishishingiz uchun mana bu tafsilotlarni havola etamiz.
+                {% blocktrans %}
+                zeynep triko has been a leading company in the textile industry for more than 7 years is doing Our organization is committed to its excellent craftsmanship, innovative designs and customer satisfaction known for its focus. Here are the details for you to get to know Zeynep Triko better.
+                {% endblocktrans %}
             </p>
         </div>
         <!-- Katta ekranlar uchun tasvir -->
@@ -38,14 +37,9 @@
         <!-- Matn qismi -->
         <div class="lg:w-[50%] w-full md:p-4 p-2 rounded-md">
             <p class="font-normal text-[20px] uppercase text-[#CA9A37] text-justify">
-                zeynep triko 7 yildan ortiq vaqtdan beri
-                to'qimachilik sanoatida yetakchi kompaniya
-                bo'lib xizmat qilmoqda. tashkilotimiz o'zining
-                mukammal mahorati, innovatsion dizaynlari
-                va mijozlar ehtiyojini qondirishga
-                qaratilganligi bilan mashhur. zeynep triko
-                bilan yaqinroq tanishishingiz uchun mana bu
-                tafsilotlarni havola etamiz.
+                {% blocktrans %}
+                ZEYNEP knitwear company was founded in 2016 by a promising and experienced entrepreneur. Since our establishment, we have implemented countless successful projects and become one of the most important companies in the industry. We are proud of our history, quality and experience.
+                {% endblocktrans %}
             </p>
         </div>
     </div>
@@ -60,13 +54,9 @@
         <!-- Matn qismi -->
         <div class="lg:w-[50%] w-full md:p-4 p-2 rounded-md">
             <p class="font-normal text-[20px] uppercase text-[#CA9A37] text-justify">
-                Bizning vazifamiz mijozlarimizga eng
-                yuqori darajadagi xizmat ko'rsatish va
-                to'qimachilik mahsulotlarida
-                mukammallikni targ'ib qilishdir. Bizning
-                maqsadimiz barqaror va ekologik toza
-                yechimlar bilan Markaziy Osiyo va butun
-                dunyoda tanilgan kompaniyaga aylanishdir.
+                {% blocktrans %}
+                Our mission is to our customers high level of service and in textiles is to promote excellence. Ours our goal is sustainable and environmentally friendly Central Asia and the whole with solutions to become a world-renowned company.
+                {% endblocktrans %}
             </p>
         </div>
         <!-- Katta ekranlar uchun tasvir -->
@@ -86,8 +76,8 @@
 
 
 <div class="text-center mt-32 pt-8">
-    <h1 class="text-4xl font-semibold py-5 text-[#CA9A37]">BIZNING MAHSULOTLARIMIZ:</h1>
-    <h1 class="text-4xl font-semibold py-5 mt-4 text-[#CA9A37]">KARDIGAN, TROYKA</h1>
+    <h1 class="text-4xl font-semibold py-5 text-[#CA9A37]">{% trans "OUR PRODUCTS:" %}</h1>
+    <h1 class="text-4xl font-semibold py-5 mt-4 text-[#CA9A37]">{% trans "KARDIGAN, TROYKA" %}</h1>
     <div class="swiper-container mx-auto overflow-hidden relative w-full">
         <div class="swiper-wrapper py-14">
             <div class="swiper-slide width-4/5">
@@ -113,7 +103,7 @@
     </div>
 </div>
 <div class="text-center">
-    <h1 class="text-4xl font-semibold py-5 text-[#CA9A37]">TROYKA, DVOYKA</h1>
+    <h1 class="text-4xl font-semibold py-5 text-[#CA9A37]">{% trans "TROYKA, DVOYKA" %}</h1>
     <div class="swiper-container mx-auto overflow-hidden relative w-full">
         <div class="swiper-wrapper py-14">
             <div class="swiper-slide width-4/5">
@@ -141,7 +131,9 @@
 
 
 <div class="text-center px-14 py-4 font-bold text-[20px] uppercase text-[#CA9A37]">
-    Zeynep Trikoning 2024-2025 kuz/qish mavsumining ochilish marosimida bizni hurmat qilgan aziz do'stlarimizga va
-    qadrli Zeynep trikotaj xodimlariga o'z minnatdorchiligimni bildiraman
+    {% blocktrans %}
+    To our dear friends who honored us at the opening ceremony of Zeynep Triko's 2024-2025 fall/winter season and
+    I express my gratitude to the dear Zeynep knitwear staff
+    {% endblocktrans %}
 </div>
 {% endblock content %}

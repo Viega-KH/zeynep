@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 {% load static %}
-
+{% load i18n %}
 {% block content %}
 <div class="bg-white py-6 sm:py-8 lg:py-12">
     <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
         <div class="mb-6 flex items-end justify-between gap-4">
-            <h2 class="text-2xl font-bold text-[#CA9A37] lg:text-3xl">MAHSULOTLAR</h2>
+            <h2 class="text-2xl font-bold text-[#CA9A37] lg:text-3xl">{% trans "PRODUCTS" %}</h2>
 
             <form class="flex items-center">
-                <label for="simple-search" class="sr-only">Qidiruv</label>
+                <label for="simple-search" class="sr-only">Search</label>
                 <div class="relative w-full">
                     <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                         <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor"
@@ -20,7 +20,7 @@
                     </div>
                     <input type="text" id="simple-search"
                         class="bg-gray-50 border-0 text-gray-900 text-sm rounded-lg focus:ring-0 focus:border-0 block w-full pl-10 p-2.5 "
-                        placeholder="Qidiruv.." required>
+                        placeholder="Search.." required>
                 </div>
                 <button type="submit" style="background-color:#CA9A37;"
                     class="p-2.5 ml-2 text-sm font-medium text-white rounded-lg border focus:ring-4 focus:outline-none "><svg
@@ -33,63 +33,21 @@
         </div>
 
         <div class="grid gap-x-4 gap-y-8 sm:grid-cols-2 md:gap-x-6 lg:grid-cols-3 xl:grid-cols-4">
-
+            {% for list in products %}
             <!-- product - start -->
             <div>
                 <a href="#"
                     class="group relative mb-2 block overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
-                    <img src="{% static "/assets/images/a_65891.jpeg" %}" loading="lazy" alt="Photo by Fakurian Design"
+                    <img src="{{ list.image.url }}" loading="lazy" alt="Photo by Fakurian Design"
                         class="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
                 </a>
 
                 <div>
-                    <a href="#" class="hover:gray-800 mb-1 text-gray-500 transition duration-100 lg:text-lg">Lazy
-                        Bottle</a>
+                    <a href="#" class="hover:gray-800 mb-1 text-gray-500 transition duration-100 lg:text-lg">{{ list.title }}</a>
                 </div>
             </div>
             <!-- product - end -->
-            <!-- product - start -->
-            <div>
-                <a href="#"
-                    class="group relative mb-2 block overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
-                    <img src="{% static "/assets/images/a_70771.jpeg" %}" loading="lazy" alt="Photo by Fakurian Design"
-                        class="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-                </a>
-
-                <div>
-                    <a href="#" class="hover:gray-800 mb-1 text-gray-500 transition duration-100 lg:text-lg">Lazy
-                        Bottle</a>
-                </div>
-            </div>
-            <!-- product - end -->
-            <!-- product - start -->
-            <div>
-                <a href="#"
-                    class="group relative mb-2 block overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
-                    <img src="{% static "/assets/images/a_66881.jpeg" %}" loading="lazy" alt="Photo by Fakurian Design"
-                        class="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-                </a>
-
-                <div>
-                    <a href="#" class="hover:gray-800 mb-1 text-gray-500 transition duration-100 lg:text-lg">Lazy
-                        Bottle</a>
-                </div>
-            </div>
-            <!-- product - end -->
-            <!-- product - start -->
-            <div>
-                <a href="#"
-                    class="group relative mb-2 block overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
-                    <img src="{% static "/assets/images/a_67141.jpeg" %}" loading="lazy" alt="Photo by Fakurian Design"
-                        class="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-                </a>
-
-                <div>
-                    <a href="#" class="hover:gray-800 mb-1 text-gray-500 transition duration-100 lg:text-lg">Lazy
-                        Bottle</a>
-                </div>
-            </div>
-            <!-- product - end -->
+            {% endfor %}
         </div>
     </div>
 </div>
