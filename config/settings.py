@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-_e-cv&l^78y%jd=(udhj6p+68$o!26z7%s!4kje7w=dy+6wf!$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -141,7 +141,6 @@ LANGUAGES = [
 LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
 
 MODELTRANSLATION_DEFAULT_LANGUAGE = 'en'
-MODELTRANSLATION_LANGUAGES = ('en', 'ru', 'uz', 'tr')
 
 LOCALE_PATHS = [
     os.path.join(BASE_DIR, 'locale'),
