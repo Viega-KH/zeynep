@@ -1,27 +1,23 @@
+# urls.py
+
 from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from django.conf.urls.i18n import i18n_patterns
 from django.views.static import serve
-from django.urls import path, include, re_path
+from django.urls import re_path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('home.urls')),
-    path('', include('news.urls')),
-    path('', include('product.urls')),
     path('ckeditor/', include('ckeditor_uploader.urls')),
 ]
-
-
 
 urlpatterns += i18n_patterns(
     path('i18n/', include('django.conf.urls.i18n')),
     path('', include('home.urls')),
     path('', include('news.urls')),
     path('', include('product.urls')),
-    prefix_default_language=False  # Default til kodi URL'da ko'rsatilmasligi uchun
 )
 
 # Media fayllar uchun URL pattern

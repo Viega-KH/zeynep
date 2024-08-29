@@ -2,24 +2,23 @@
 {% load static %}
 {% load i18n %}
 {% block content %}
-<!-- component -->
-<div class="flex justify-center items-center">
-    <div class="2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto">
+<div class="py-6 sm:py-8 lg:py-12">
+    <div class="mx-auto w-4/5 px-4 md:px-8">
         <div class="mb-6 flex items-end justify-between gap-4">
-            <h2 class="text-2xl font-bold text-[#CA9A37] lg:text-3xl">{% trans "News" %}</h2>
+            <h2 class="text-2xl font-bold text-[#CA9A37] uppercase lg:text-3xl">{% trans "News" %}</h2>
 
-            <form class="flex items-center">
-                <label for="simple-search" class="sr-only">{% trans "Search" %}</label>
+            <form method="GET" action="{{ news }}" class="flex items-center">
+                <label for="simple-search" class="sr-only">Search</label>
                 <div class="relative w-full">
                     <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                        <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor"
-                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd"
                                 d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
                                 clip-rule="evenodd"></path>
                         </svg>
                     </div>
-                    <input type="text" id="simple-search"
+                    <input name="search" value="{{ search_query }}" type="text" id="simple-search"
                         class="bg-gray-50 border-0 text-gray-900 text-sm rounded-lg focus:ring-0 focus:border-0 block w-full pl-10 p-2.5 "
                         placeholder="Search.." required>
                 </div>
@@ -32,26 +31,102 @@
                     </svg></button>
             </form>
         </div>
-        <div class="lg:flex items-stretch md:mt-12 mt-8">
-            <div class="max-w-screen-xl p-5 mx-auto dark:bg-gray-100">
-                <div class="grid grid-cols-1 gap-5 lg:grid-cols-4 sm:grid-cols-2">
-                    {% for list in new %}
-                    <div class="relative flex items-end justify-start w-full text-left dark:bg-gray-500 bg-center bg-cover h-96" style="background-image: url({{ list.image.url }});">
-                        <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via- dark:from-gray-50 dark:to-gray-50"></div>
-                        <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-                            <a rel="noopener noreferrer" href="#" class="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-white">{{ list.categories }}</a>
-                            <div class="flex flex-col justify-start text-center">
-                                <span class="text-3xl font-semibold leading-none text-white tracking-wide">{{ list.publish|date:"d" }}</span>
-                                <span class="leading-none text-white uppercase">{{ list.publish|date:"F" }}</span>
-                            </div>
-                        </div>
-                        <h2 class="z-10 p-5">
-                            <a rel="noopener noreferrer" href="{% url "newone" list.id %}" class="font-medium text-white text-md hover:underline">{{ list.title|slice:":70" }}</a>
-                        </h2>
+
+        <div class="grid gap-x-4 gap-y-8 py-4 sm:grid-cols-2 md:gap-x-2 lg:grid-cols-2 xl:grid-cols-2">
+            {% for list in page_obj %}
+
+            <div
+                class="bg-white w-full rounded-lg shadow-md flex flex-col transition-all overflow-hidden hover:shadow-2xl">
+                <div class=" p-6">
+
+                    <div
+                        class="pb-3 mb-4 border-b border-stone-200 text-xs font-medium flex justify-between text-blue-900">
+                        <span class="flex items-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            {{ list.publish|date:"d F Y" }}
+                        </span>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+                            </svg>
+
+                        </span>
                     </div>
-                    {% endfor %}
+                    <h3 class="mb-4 font-semibold  text-2xl"><a href="{% url 'newone' list.id %}"
+                            class="transition-all text-blue-900 hover:text-blue-600">{{ list.title|slice:":70" }}</a></h3>
+                    <p class="text-sky-800 text-sm mb-0">
+                        {{ list.body|striptags|safe|slice:":100" }}...
+                    </p>
+                </div>
+                <div class="mt-auto">
+                    <img src="{{ list.image.url }}" alt="" class="w-full h-96 object-cover">
                 </div>
             </div>
+
+            {% endfor %}
+        </div>
+
+        <div class="mb-6 flex items-end justify-between gap-4">
+            <h2 class="text-2xl font-bold text-[#CA9A37] lg:text-3xl"></h2>
+
+            <form class="flex items-center">
+                <div class="relative w-full">
+                    <div class="flex">
+                        <!-- Previous Button -->
+                        {% if page_obj.has_previous %}
+                        <a href="?page={{ page_obj.previous_page_number }}"
+                            class="flex items-center justify-center px-6 h-10 me-3 text-base font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                            <svg class="w-3.5 h-3.5 me-2 rtl:rotate-180" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4" />
+                            </svg>
+                            Previous
+                        </a>
+                        {% else %}
+                        <span
+                            class="flex items-center justify-center px-6 h-10 me-3 text-base font-medium text-gray-300 bg-gray-100 border border-gray-300 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-gray-500">
+                            <svg class="w-3.5 h-3.5 me-2 rtl:rotate-180" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4" />
+                            </svg>
+                            Previous
+                        </span>
+                        {% endif %}
+
+                        <!-- Next Button -->
+                        {% if page_obj.has_next %}
+                        <a href="?page={{ page_obj.next_page_number }}"
+                            class="flex items-center justify-center px-6 h-10 text-base font-medium text-[#CA9A37] border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                            Next
+                            <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
+                        {% else %}
+                        <span
+                            class="flex items-center justify-center px-6 h-10 text-base font-medium text-[#CA9A37] border border-gray-300 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-gray-500">
+                            Next
+                            <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </span>
+                        {% endif %}
+                    </div>
+
+                </div>
+            </form>
         </div>
     </div>
 </div>

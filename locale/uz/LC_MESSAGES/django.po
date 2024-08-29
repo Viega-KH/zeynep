@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-29 20:27+0500\n"
+"POT-Creation-Date: 2024-08-30 01:01+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,136 +17,127 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-#: .\config\settings.py:135
+#: .\config\settings.py:134 .\resurs\base.html:47
 msgid "English"
-msgstr ""
+msgstr "Inglizcha"
 
-#: .\config\settings.py:136
+#: .\config\settings.py:135 .\resurs\base.html:49
 msgid "Russian"
-msgstr ""
+msgstr "Ruscha"
+
+#: .\config\settings.py:136 .\resurs\base.html:51
+msgid "Uzbek"
+msgstr "O'zbekcha"
 
 #: .\config\settings.py:137
-msgid "Uzbek"
-msgstr ""
-
-#: .\config\settings.py:138
 msgid "Turkish"
-msgstr ""
+msgstr "Turkcha"
 
 #: .\contact\apps.py:7 .\contact\apps.py:8
 msgid "Contact"
-msgstr ""
+msgstr "Aloqa"
 
-#: .\contact\models.py:5 .\resurs\base.html:204
+#: .\contact\models.py:5
 msgid "Location"
-msgstr ""
+msgstr "Manzil"
 
 #: .\contact\models.py:6
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
-#: .\contact\models.py:7 .\resurs\base.html:184
+#: .\contact\models.py:7 .\resurs\base.html:136
 msgid "Instagram"
-msgstr ""
+msgstr "Instagram"
 
 #: .\contact\models.py:8 .\contact\models.py:9
 msgid "Call"
-msgstr ""
+msgstr "Qo'ng'iroq"
 
 #: .\contact\models.py:12 .\contact\models.py:13
 msgid "Link"
-msgstr ""
+msgstr "Havola"
 
 #: .\news\apps.py:7 .\news\apps.py:8
 msgid "Information"
-msgstr ""
+msgstr "Ma'lumot"
 
 #: .\news\models.py:7 .\product\models.py:6
 msgid "Name"
-msgstr ""
+msgstr "Ism"
 
 #: .\news\models.py:10 .\news\models.py:11 .\news\models.py:20
 #: .\product\models.py:9 .\product\models.py:10 .\product\models.py:23
 msgid "Category"
-msgstr ""
+msgstr "Kategoriya"
 
 #: .\news\models.py:18 .\product\models.py:22
 msgid "Title"
-msgstr ""
+msgstr "Sarlavha"
 
 #: .\news\models.py:19
 msgid "Body"
-msgstr ""
+msgstr "Matn"
 
 #: .\news\models.py:21 .\product\models.py:24
 msgid "Image"
-msgstr ""
+msgstr "Rasm"
 
 #: .\news\models.py:22 .\product\models.py:25
 msgid "Publish Date"
-msgstr ""
+msgstr "E'lon qilingan sana"
 
 #: .\news\models.py:23 .\product\models.py:26
 msgid "Created"
-msgstr ""
+msgstr "Yaratilgan"
 
 #: .\news\models.py:24 .\product\models.py:27
 msgid "Updated"
-msgstr ""
+msgstr "Yangilangan"
 
-#: .\news\models.py:27 .\news\models.py:28 .\resurs\base.html:141
-#: .\resurs\pages\news.html:9
+#: .\news\models.py:27 .\news\models.py:28 .\resurs\base.html:90
 msgid "News"
-msgstr ""
+msgstr "Yangiliklar"
 
 #: .\product\apps.py:7 .\product\apps.py:8 .\product\models.py:30
 #: .\product\models.py:31
 msgid "Products"
-msgstr ""
+msgstr "Mahsulotlar"
 
 #: .\product\models.py:18
 msgid "Draft"
-msgstr ""
+msgstr "Loyihalar"
 
 #: .\product\models.py:19
 msgid "Published"
-msgstr ""
+msgstr "E'lon qilingan"
 
-#: .\resurs\base.html:130
+#: .\resurs\base.html:79
 msgid "Home"
-msgstr ""
+msgstr "Bosh sahifa"
 
-#: .\resurs\base.html:135
+#: .\resurs\base.html:84
 msgid "Product"
-msgstr ""
+msgstr "Mahsulot"
 
-#: .\resurs\base.html:146
+#: .\resurs\base.html:95
 msgid "About Us"
-msgstr ""
+msgstr "Biz haqimizda"
 
-#: .\resurs\base.html:185
+#: .\resurs\base.html:137
 msgid "Follow us"
-msgstr ""
+msgstr "Bizni kuzatib boring"
 
-#: .\resurs\base.html:194
+#: .\resurs\base.html:149
 msgid "Phone"
-msgstr ""
+msgstr "Telefon"
 
-#: .\resurs\base.html:195
+#: .\resurs\base.html:150
 msgid "Contact us"
-msgstr ""
-
-#: .\resurs\base.html:205
-msgid "Find us at our office"
-msgstr ""
-
-#: .\resurs\base.html:207
-msgid "Toshkent"
-msgstr ""
+msgstr "Biz bilan bog'laning"
 
 #: .\resurs\include\new.html:18
-msgid "Sana"
-msgstr ""
+msgid "Date"
+msgstr "Sana"
 
 #: .\resurs\pages\about.html:18
 msgid ""
@@ -158,6 +149,13 @@ msgid ""
 "better.\n"
 "                "
 msgstr ""
+"\n"
+"                Zeynep Triko mato sanoatida 7 yildan ortiq vaqt davomida "
+"yetakchi kompaniya bo'lib kelmoqda. Bizning tashkilotimiz mukammal ish "
+"mahorati, innovatsion dizaynlar va mijozlardan qoniqishni ta'minlashga "
+"bag'ishlangan. Zeynep Triko haqida yaxshiroq bilib olish uchun tafsilotlar "
+"mana shu yerda.\n"
+"                "
 
 #: .\resurs\pages\about.html:40
 msgid ""
@@ -168,6 +166,13 @@ msgid ""
 "in the industry. We are proud of our history, quality and experience.\n"
 "                "
 msgstr ""
+"\n"
+"                ZEYNEP trikotaj kompaniyasi 2016-yilda istiqbolli va tajribali "
+"tadbirkor tomonidan tashkil etilgan. Biz tashkil etilganimizdan buyon "
+"ko'plab muvaffaqiyatli loyihalarni amalga oshirdik va sanoatdagi eng muhim "
+"kompaniyalardan biriga aylandik. Tariximiz, sifatimiz va tajribamiz bilan "
+"g'ururlanamiz.\n"
+"                "
 
 #: .\resurs\pages\about.html:57
 msgid ""
@@ -178,18 +183,24 @@ msgid ""
 "a world-renowned company.\n"
 "                "
 msgstr ""
+"\n"
+"                Bizning maqsadimiz mijozlarimizga yuqori xizmat darajasini "
+"taqdim etish va matolar sohasida mukammallikni targ'ib qilishdir. Maqsadimiz "
+"Markaziy Osiyoda va butun dunyoda barqaror va ekologik toza yechimlar "
+"taklif etuvchi dunyo miqyosida tanilgan kompaniya bo'lishdir.\n"
+"                "
 
 #: .\resurs\pages\about.html:79 .\resurs\pages\home.html:84
 msgid "OUR PRODUCTS:"
-msgstr ""
+msgstr "MAHSULOTLARIMIZ:"
 
 #: .\resurs\pages\about.html:80 .\resurs\pages\home.html:85
 msgid "KARDIGAN, TROYKA"
-msgstr ""
+msgstr "KARDIGAN, TROYKA"
 
 #: .\resurs\pages\about.html:106 .\resurs\pages\home.html:111
 msgid "TROYKA, DVOYKA"
-msgstr ""
+msgstr "TROYKA, DVOYKA"
 
 #: .\resurs\pages\about.html:134 .\resurs\pages\home.html:139
 msgid ""
@@ -199,6 +210,11 @@ msgid ""
 "    I express my gratitude to the dear Zeynep knitwear staff\n"
 "    "
 msgstr ""
+"\n"
+"    Zeynep Triko 2024-2025 kuz/qish mavsumi ochilish marosimida bizni "
+"qo'llab-quvvatlagan aziz do'stlarimizga minnatdorchiligimni bildiraman va Zeynep "
+"trikotaj xodimlariga o'z minnatdorchiligimni izhor etaman.\n"
+"    "
 
 #: .\resurs\pages\home.html:17
 msgid ""
@@ -211,6 +227,14 @@ msgid ""
 "know Zeynep Triko better.\n"
 "                "
 msgstr ""
+"\n"
+"                Zeynep Triko mato sanoatida 7 yildan ortiq vaqt davomida "
+"yetakchi kompaniya bo'lib kelmoqda. Bizning\n"
+"                tashkilotimiz mukammal ish mahorati, innovatsion dizaynlar va "
+"mijozlardan qoniqishni ta'minlashga\n"
+"                bag'ishlangan. Zeynep Triko haqida yaxshiroq bilib olish uchun "
+"tafsilotlar mana shu yerda.\n"
+"                "
 
 #: .\resurs\pages\home.html:41
 msgid ""
@@ -223,6 +247,14 @@ msgid ""
 "quality and experience.\n"
 "                "
 msgstr ""
+"\n"
+"                ZEYNEP trikotaj kompaniyasi 2016-yilda istiqbolli va tajribali "
+"tadbirkor tomonidan tashkil etilgan. Biz\n"
+"                tashkil etilganimizdan buyon ko'plab muvaffaqiyatli loyihalarni "
+"amalga oshirdik va sanoatdagi eng muhim\n"
+"                kompaniyalardan biriga aylandik. Tariximiz, sifatimiz va "
+"tajribamiz bilan g'ururlanamiz.\n"
+"                "
 
 #: .\resurs\pages\home.html:60
 msgid ""
@@ -234,11 +266,18 @@ msgid ""
 "                world-renowned company.\n"
 "                "
 msgstr ""
+"\n"
+"                Bizning maqsadimiz mijozlarimizga yuqori xizmat darajasini "
+"taqdim etish va matolar sohasida mukammallikni targ'ib qilishdir. Maqsadimiz\n"
+"                Markaziy Osiyoda va butun dunyoda barqaror va ekologik toza "
+"yechimlar taklif etuvchi\n"
+"                dunyo miqyosida tanilgan kompaniya bo'lishdir.\n"
+"                "
 
-#: .\resurs\pages\news.html:12
-msgid "Search"
-msgstr ""
+#: .\resurs\pages\news.html:8
+msgid "NEWS"
+msgstr "YANGILIKLAR"
 
 #: .\resurs\pages\product.html:8
 msgid "PRODUCTS"
-msgstr ""
+msgstr "MAHSULOTLAR"

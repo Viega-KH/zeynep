@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-29 20:27+0500\n"
+"POT-Creation-Date: 2024-08-30 01:01+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,19 +19,19 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
-#: .\config\settings.py:135
+#: .\config\settings.py:134 .\resurs\base.html:47
 msgid "English"
 msgstr "Английский"
 
-#: .\config\settings.py:136
+#: .\config\settings.py:135 .\resurs\base.html:49
 msgid "Russian"
 msgstr "Русский"
 
-#: .\config\settings.py:137
+#: .\config\settings.py:136 .\resurs\base.html:51
 msgid "Uzbek"
 msgstr "Узбекский"
 
-#: .\config\settings.py:138
+#: .\config\settings.py:137
 msgid "Turkish"
 msgstr "Турецкий"
 
@@ -39,7 +39,7 @@ msgstr "Турецкий"
 msgid "Contact"
 msgstr "Контакт"
 
-#: .\contact\models.py:5 .\resurs\base.html:204
+#: .\contact\models.py:5
 msgid "Location"
 msgstr "Местоположение"
 
@@ -47,7 +47,7 @@ msgstr "Местоположение"
 msgid "Telegram"
 msgstr "Телеграм"
 
-#: .\contact\models.py:7 .\resurs\base.html:184
+#: .\contact\models.py:7 .\resurs\base.html:136
 msgid "Instagram"
 msgstr "Инстаграм"
 
@@ -78,7 +78,7 @@ msgstr "Заголовок"
 
 #: .\news\models.py:19
 msgid "Body"
-msgstr "Содержание"
+msgstr "Тело"
 
 #: .\news\models.py:21 .\product\models.py:24
 msgid "Image"
@@ -96,8 +96,7 @@ msgstr "Создано"
 msgid "Updated"
 msgstr "Обновлено"
 
-#: .\news\models.py:27 .\news\models.py:28 .\resurs\base.html:141
-#: .\resurs\pages\news.html:9
+#: .\news\models.py:27 .\news\models.py:28 .\resurs\base.html:90
 msgid "News"
 msgstr "Новости"
 
@@ -114,42 +113,33 @@ msgstr "Черновик"
 msgid "Published"
 msgstr "Опубликовано"
 
-#: .\resurs\base.html:130
+#: .\resurs\base.html:79
 msgid "Home"
 msgstr "Главная"
 
-#: .\resurs\base.html:135
+#: .\resurs\base.html:84
 msgid "Product"
 msgstr "Продукт"
 
-#: .\resurs\base.html:146
+#: .\resurs\base.html:95
 msgid "About Us"
 msgstr "О нас"
 
-#: .\resurs\base.html:185
+#: .\resurs\base.html:137
 msgid "Follow us"
-msgstr "Подписывайтесь на нас"
+msgstr "Следите за нами"
 
-#: .\resurs\base.html:194
+#: .\resurs\base.html:149
 msgid "Phone"
 msgstr "Телефон"
 
-#: .\resurs\base.html:195
+#: .\resurs\base.html:150
 msgid "Contact us"
 msgstr "Свяжитесь с нами"
 
-#: .\resurs\base.html:205
-msgid "Find us at our office"
-msgstr "Найдите нас в нашем офисе"
-
-#: .\resurs\base.html:207
-msgid "Toshkent"
-msgstr "Ташкент"
-
 #: .\resurs\include\new.html:18
-msgid "Sana"
+msgid "Date"
 msgstr "Дата"
-
 
 #: .\resurs\pages\about.html:18
 msgid ""
@@ -160,9 +150,13 @@ msgid ""
 "for its focus. Here are the details for you to get to know Zeynep Triko "
 "better.\n"
 "                "
-msgstr "
-ZEYNEP трико уже более 7 лет является ведущей компанией в текстильной промышленности. Наша организация известна своим превосходным качеством изготовления, инновационным дизайном и упором на удовлетворенность клиентов. Вот подробности, которые помогут вам лучше познакомиться с ZEYNEP трико;
-"
+msgstr ""
+"\n"
+"                zeynep triko уже более 7 лет является ведущей компанией в "
+"текстильной промышленности. Наша организация привержена своему высокому "
+"ремесленному мастерству, инновационным дизайнам и удовлетворению клиентов. "
+"Вот детали, чтобы вы лучше узнали Zeynep Triko.\n"
+"                "
 
 #: .\resurs\pages\about.html:40
 msgid ""
@@ -172,9 +166,13 @@ msgid ""
 "countless successful projects and become one of the most important companies "
 "in the industry. We are proud of our history, quality and experience.\n"
 "                "
-msgstr "
-Компания ZEYNEP трико была основана в 2016 году дальновидным и опытным бизнесменом. С момента нашего основания мы реализовали бесчисленное количество успешных проектов и стали одним из самых важных компаний в отрасли. Мы гордимся нашей историей, качеством и опытом.
-"
+msgstr ""
+"\n"
+"                Трикотажная компания ZEYNEP была основана в 2016 году "
+"многообещающим и опытным предпринимателем. С момента создания мы успешно "
+"реализовали множество проектов и стали одной из самых значимых компаний в "
+"отрасли. Мы гордимся своей историей, качеством и опытом.\n"
+"                "
 
 #: .\resurs\pages\about.html:57
 msgid ""
@@ -184,9 +182,14 @@ msgid ""
 "environmentally friendly Central Asia and the whole with solutions to become "
 "a world-renowned company.\n"
 "                "
-msgstr "
-Наша миссия — обеспечить высочайший уровень обслуживания наших клиентов и способствовать совершенству в текстильной продукции. Наша цель – стать известной компанией в Центральной Азии и во всём мире, предлагающей устойчивые и экологически чистые решения
-"
+msgstr ""
+"\n"
+"                Наша миссия — обеспечить нашим клиентам высокий уровень "
+"обслуживания и в текстильной отрасли продвигать совершенство. Наша цель — "
+"стать всемирно известной компанией, предлагающей устойчивые и "
+"экологически чистые решения для Центральной Азии и всего мира.\n"
+"                "
+
 #: .\resurs\pages\about.html:79 .\resurs\pages\home.html:84
 msgid "OUR PRODUCTS:"
 msgstr "НАШИ ПРОДУКТЫ:"
@@ -206,9 +209,12 @@ msgid ""
 "Triko's 2024-2025 fall/winter season and\n"
 "    I express my gratitude to the dear Zeynep knitwear staff\n"
 "    "
-msgstr "
-НА ЦЕРЕМОНИИ ОСЕНЬ-ЗИМЫ 2024-2025 СЕЗОНА ZEYNEP TRIKO Я ХОЧУ ВЫРАЗИТЬ БЛАГОДАРНОСТЬ НАШИМ ДОРОГИМ ДРУЗЬЯМ И УВАЖАЕМЫМ СОТРУДНИКАМ ZEYNEP KNITTING, КОТОРЫЕ ЧЕСТИЛИ НАС.
-"
+msgstr ""
+"\n"
+"    Дорогим друзьям, которые почтили нас своим присутствием на церемонии "
+"открытия осенне-зимнего сезона 2024-2025 Zeynep Triko,\n"
+"    и выражаю благодарность дорогим сотрудникам Zeynep трикотаж.\n"
+"    "
 
 #: .\resurs\pages\home.html:17
 msgid ""
@@ -220,9 +226,14 @@ msgid ""
 "                known for its focus. Here are the details for you to get to "
 "know Zeynep Triko better.\n"
 "                "
-msgstr "
-ZEYNEP трико уже более 7 лет является ведущей компанией в текстильной промышленности. Наша организация известна своим превосходным качеством изготовления, инновационным дизайном и упором на удовлетворенность клиентов. Вот подробности, которые помогут вам лучше познакомиться с ZEYNEP трико;
-"
+msgstr ""
+"\n"
+"                zeynep triko уже более 7 лет является ведущей компанией в "
+"текстильной промышленности. Наша\n"
+"                организация привержена своему высокому ремесленному "
+"мастерству, инновационным дизайнам и удовлетворению клиентов.\n"
+"                Вот детали, чтобы вы лучше узнали Zeynep Triko.\n"
+"                "
 
 #: .\resurs\pages\home.html:41
 msgid ""
@@ -234,28 +245,32 @@ msgid ""
 "                companies in the industry. We are proud of our history, "
 "quality and experience.\n"
 "                "
-msgstr "
-Компания ZEYNEP трико была основана в 2016 году дальновидным и опытным бизнесменом. С момента нашего основания мы реализовали бесчисленное количество успешных проектов и стали одним из самых важных компаний в отрасли. Мы гордимся нашей историей, качеством и опытом.
-"
+msgstr ""
+"\n"
+"                Трикотажная компания ZEYNEP была основана в 2016 году "
+"многообещающим и опытным предпринимателем. С момента создания мы успешно "
+"реализовали множество проектов и стали одной из самых значимых компаний в "
+"отрасли. Мы гордимся своей историей, качеством и опытом.\n"
+"                "
 
-#: .\resurs\pages\home.html:60
+#: .\resurs\pages\home.html:58
 msgid ""
 "\n"
 "                Our mission is to our customers high level of service and in "
-"textiles is to promote excellence. Ours our\n"
-"                goal is sustainable and environmentally friendly Central "
-"Asia and the whole with solutions to become a\n"
-"                world-renowned company.\n"
+"textiles is to promote excellence. Ours\n"
+"                our goal is sustainable and environmentally friendly Central "
+"Asia and the whole with solutions to become\n"
+"                a world-renowned company.\n"
 "                "
-msgstr "
-Наша миссия — обеспечить высочайший уровень обслуживания наших клиентов и способствовать совершенству в текстильной продукции. Наша цель – стать известной компанией в Центральной Азии и во всём мире, предлагающей устойчивые и экологически чистые решения
-"
+msgstr ""
+"\n"
+"                Наша миссия — обеспечить нашим клиентам высокий уровень "
+"обслуживания и в текстильной отрасли продвигать совершенство. Наша цель — "
+"стать всемирно известной компанией, предлагающей устойчивые и экологически "
+"чистые решения для Центральной Азии и всего мира.\n"
+"                "
 
-#: .\resurs\pages\news.html:12
-msgid "Search"
-msgstr "Поиск"
-
-#: .\resurs\pages\product.html:8
-msgid "PRODUCTS"
-msgstr "ПРОДУКТЫ"
+#: .\resurs\pages\home.html:110
+msgid "Zeynep Triko"
+msgstr "Zeynep Triko"
 
