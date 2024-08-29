@@ -34,7 +34,7 @@
 
                         <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
                             <button type="button" data-dropdown-toggle="language-dropdown-menu"
-                                class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm uppercase text-[#CA9A37] rounded-lg cursor-pointer">
+                                class="inline-flex items-center font-medium justify-center px-4 py-2 text-[16px] uppercase text-[#CA9A37] rounded-lg cursor-pointer">
                                 <img src="https://cdn-icons-png.flaticon.com/512/197/197416.png"
                                                     alt="Uzbek Flag" class="h-3.5 w-3.5 rounded-full me-2">
                                 UZ
@@ -44,7 +44,7 @@
                                 id="language-dropdown-menu">
                                 <ul class="py-2 font-medium" role="none">
                                     <li>
-                                        <a href="#" class="block px-4 py-2 text-sm text-[#CA9A37] " role="menuitem">
+                                        <a href="#" class="block px-4 py-2 text-[16px] text-[#CA9A37] " role="menuitem">
                                             <div class="inline-flex items-center">
                                                 <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full me-2"
                                                     xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us"
@@ -70,7 +70,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="block px-4 py-2 text-sm text-[#CA9A37] " role="menuitem">
+                                        <a href="#" class="block px-4 py-2 text-[16px] text-[#CA9A37] " role="menuitem">
                                             <div class="inline-flex items-center">
                                                 <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true"
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
@@ -83,7 +83,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="block px-4 py-2 text-sm text-[#CA9A37] " role="menuitem">
+                                        <a href="#" class="block px-4 py-2 text-[16px] text-[#CA9A37] " role="menuitem">
                                             <div class="inline-flex items-center">
                                                 <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true"
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -97,7 +97,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="block px-4 py-2 text-sm text-[#CA9A37] " role="menuitem">
+                                        <a href="#" class="block px-4 py-2 text-[16px] text-[#CA9A37] " role="menuitem">
                                             <div class="inline-flex items-center">
                                                 <img src="https://cdn-icons-png.flaticon.com/512/197/197416.png"
                                                     alt="Uzbek Flag" class="h-3.5 w-3.5 rounded-full me-2">
@@ -108,10 +108,10 @@
                                 </ul>
                             </div>
                             <button data-collapse-toggle="navbar-language" type="button"
-                                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                                class="inline-flex items-center p-2 w-10 h-10 justify-center text-[16px] text-[#CA9A37] rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                                 aria-controls="navbar-language" aria-expanded="false">
                                 <span class="sr-only">Open main menu</span>
-                                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 17 14">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                         stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
@@ -125,21 +125,21 @@
                                 class="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                                 <li>
                                     <a href="{{ home }}"
-                                        class="block py-2 {% if request.path == home %}md:border-b-4 md:border-[#CA9A37]{% endif %} uppercase px-3 md:text-sm text-[#CA9A37] decoration-sky-500 md:bg-transparent md:p-0"
+                                        class="block py-2 {% if request.path == home %}md:border-b-4 md:border-[#CA9A37]{% endif %} uppercase px-3 md:text-[16px] text-[#CA9A37] decoration-sky-500 md:bg-transparent md:p-0"
                                         aria-current="page">Bosh Sahifa</a>
                                 </li>
                                 <li>
                                     <a href="{{ product }}"
-                                        class="block py-2 {% if request.path == product %}md:border-b-4 md:border-[#CA9A37]{% endif %} px-3 md:text-sm uppercase md:p-0 text-[#CA9A37] md:hover:bg-transparent">Mahsulotlar
+                                        class="block py-2 {% if request.path == product %}md:border-b-4 md:border-[#CA9A37]{% endif %} px-3 md:text-[16px] uppercase md:p-0 text-[#CA9A37] md:hover:bg-transparent">Mahsulotlar
                                     </a>
                                 </li>
                                 <li>
                                     <a href="{{ news }}"
-                                        class="block py-2 {% if request.path == news %}md:border-b-4 md:border-[#CA9A37]{% endif %} px-3 md:text-sm uppercase md:p-0 text-[#CA9A37] md:hover:bg-transparent">Yangiliklar</a>
+                                        class="block py-2 {% if request.path == news %}md:border-b-4 md:border-[#CA9A37]{% endif %} px-3 md:text-[16px] uppercase md:p-0 text-[#CA9A37] md:hover:bg-transparent">Yangiliklar</a>
                                 </li>
                                 <li>
                                     <a href="{{ about }}"
-                                        class="block py-2 {% if request.path == about %}md:border-b-4 md:border-[#CA9A37]{% endif %} px-3 md:text-sm uppercase md:p-0 text-[#CA9A37] md:hover:bg-transparent">Biz
+                                        class="block py-2 {% if request.path == about %}md:border-b-4 md:border-[#CA9A37]{% endif %} px-3 md:text-[16px] uppercase md:p-0 text-[#CA9A37] md:hover:bg-transparent">Biz
                                         Haqimizda</a>
                                 </li>
                             </ul>
@@ -148,18 +148,13 @@
                     </div>
                 </nav>
                 {% if request.path == home %}
-                <div style="margin-top: 475px; background-image: url('{% static 'assets/images/image.jpeg' %}')"
-                    class="hidden md:block bg-center bg-cover bg-no-repeat w-full h-[400px] md:h-[620px] lg:h-[720px] xl:h-[820px]">
-                    <!-- Bu yerda kontentingiz -->
-                </div>
+                <div style="background-image: url('{% static 'assets/images/banner.png' %}')" 
+                class="w-full h-screen md:w-[90%] md:h-[620px] lg:h-[720px] xl:h-[820px] bg-center bg-cover bg-no-repeat">
+           </div>
+           
                 {% endif %}
             </div>
         </div>
-        {% if request.path == home %}
-        <div style="background-image: url('{% static '/assets/images/zeynep.png' %}')"
-            class="hidden md:block bg-center bg-cover bg-no-repeat absolute left-[50%] top-[219px] translate-x-[-50%] w-full max-w-[909px] h-[300px] md:h-[400px] lg:h-[494px]">
-        </div>
-        {% endif %}
         </div>
     </section>
 
@@ -170,41 +165,53 @@
     {% endblock content %}
 
 
-    <div
-        class="flex flex-col lg:flex-row justify-center py-14 items-center mx-[77.7px] space-y-8 lg:space-x-[15px] lg:space-y-0">
-        <!-- Birinchi ustun -->
-        <div class="flex flex-col items-center space-y-4 mx-12 w-full max-w-md">
-            <div class="flex items-center space-x-4 w-full">
-                <div class="flex-shrink-0 w-1/6">
-                    <img class="w-12 h-12 rotate-[150deg]" src="{% static "/assets/vectors/vector_1_x2.svg" %}" alt="Vector 1" />
+
+    <div class="bg-white pt-4 [16px]:pt-10 lg:pt-12">
+        <footer class="mx-auto max-w-screen-2xl px-4 md:px-8">
+          
+            <div class="container flex flex-col mx-auto bg-white">
+                <div class="w-full draggable">
+                    <div class="container flex flex-col items-center gap-16 mx-auto my-32">
+                        <div class="grid w-full grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+                            <div
+                                class="flex flex-col shadow-xl items-center gap-3 px-8 py-10 bg-white rounded-xl shadow-main">
+                                <a href="https://www.instagram.com/zeynep_triko" target="_blank" class='fill-[#CA9A37]'>
+                                    <svg width='40' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                                </a>
+                                <p class="text-2xl font-extrabold text-dark-grey-900">Instagram</p>
+                                <p class="text-base leading-7 text-dark-grey-600">Contact us at</p>
+                                <a class="text-lg font-bold text-purple-blue-500"
+                                    href="https://www.instagram.com/zeynep_triko" target="_blank">zeynep_triko</a>
+                            </div>
+                            <div
+                                class="flex flex-col shadow-xl items-center gap-3 px-8 py-10 bg-white rounded-xl shadow-main">
+                                <span class='fill-[#CA9A37]'>
+                                    <svg width='38' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z"/></svg>
+                                </span>
+                                <p class="text-2xl font-extrabold text-dark-grey-900">Telefon</p>
+                                <p class="text-base leading-7 text-dark-grey-600">Bizga telefon orqali murojaat qiling</p>
+                                <a class="text-lg font-bold text-purple-blue-500"
+                                    href="tel:+998 90-016-04-01">+998 90-016-04-01</a>
+                            </div>
+                            <div
+                                class="flex flex-col shadow-xl items-center gap-3 px-8 py-10 bg-white rounded-xl shadow-main">
+                                <span class='fill-[#CA9A37]'>
+                                    <svg width='38' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                                </span>
+                                <p class="text-2xl font-extrabold text-dark-grey-900">Joylashuv</p>
+                                <p class="text-base leading-7 text-dark-grey-600">Bizni ofisimizda toping</p>
+                                <a class="text-lg font-bold text-purple-blue-500" target="_blank"
+                                    href="https://goo.gl/maps/QcWzYETAh4FS3KTD7">Toshkent</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <span class="flex-grow text-xl font-bold text-[#CA9A37]">+998 90 016-04-01</span>
             </div>
-            <div class="flex items-center space-x-4 w-full">
-                <div class="flex-shrink-0 w-1/6">
-                    <img class="w-12 h-12" src="{% static "/assets/vectors/logostelegram_x2.svg" %}" alt="Telegram Logo" />
-                </div>
-                <span class="flex-grow text-xl font-bold text-[#CA9A37]">+998 90 016-04-01</span>
-            </div>
-            <div class="flex items-center space-x-4 w-full">
-                <div class="flex-shrink-0 w-1/6">
-                    <img class="w-12 h-12" src="{% static "/assets/vectors/group_x2.svg" %}" alt="Group" />
-                </div>
-                <span class="flex-grow uppercase text-xl font-bold text-[#CA9A37]">zeynep_triko</span>
-            </div>
-        </div>
+        </footer>
+      </div>
 
 
-        <!-- To'rtinchi ustun -->
-        <div
-            class="relative flex p-[87px_5px_136px_0] w-full max-w-md h-[260px] rounded-[30px] bg-white overflow-hidden">
-            <iframe class="absolute top-0 left-0 w-full h-full"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58814.020690037755!2d69.16066304925744!3d41.31108130853159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef7e3ad058477%3A0x2d1e4f6c5e0ff832!2sTashkent%2C%20Uzbekistan!5e0!3m2!1sen!2sus!4v1694732357680!5m2!1sen!2sus"
-                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <img class="absolute bottom-0 right-0 w-[23px] h-[37px]" src="{% static "/assets/vectors/vector_x2.svg" %}"
-                alt="Vector" />
-        </div>
-    </div>
+
 
 
     <script src="{% static "mainjs/swiper-bundle.js" %}"></script>

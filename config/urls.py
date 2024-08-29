@@ -12,7 +12,7 @@ urlpatterns = [
     path('', include('news.urls')),
     path('', include('product.urls')),
     path('ckeditor/', include('ckeditor_uploader.urls')),
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
 
 
 
@@ -21,6 +21,7 @@ urlpatterns += i18n_patterns(
     path('', include('home.urls')),
     path('', include('news.urls')),
     path('', include('product.urls')),
+    prefix_default_language=False  # Default til kodi URL'da ko'rsatilmasligi uchun
 )
 
 # Media fayllar uchun URL pattern
