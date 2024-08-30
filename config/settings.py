@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-_e-cv&l^78y%jd=(udhj6p+68$o!26z7%s!4kje7w=dy+6wf!$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -124,12 +124,10 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
+
 DEFAULT_CHARSET = 'utf-8'
-
-LANGUAGE_CODE = 'en'
-
+LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
-
 USE_I18N = True
 LANGUAGES = [
     ('en', _('English')),
@@ -137,14 +135,8 @@ LANGUAGES = [
     ('uz', _('Uzbek')),
     ('tr', _('Turkish')),
 ]
-
 LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
-
 MODELTRANSLATION_DEFAULT_LANGUAGE = 'en'
-
-LOCALE_PATHS = [
-    os.path.join(BASE_DIR, 'locale'),
-]
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/

@@ -5,37 +5,37 @@
 {% block content %}
 <div class="bg-white py-6 sm:py-8 lg:py-12">
     <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-<section class="pb-10 pt-20 dark:bg-dark xl:pb-20 xl:pt-[120px]">
-    <div class="container max-auto">
-        <div class="px-4 sm:px-6 md:px-8">
-            <div class="max-w-3xl mx-auto">
-                <main>
-                    <article class="relative pt-10">
-                        <h1 class="text-2xl font-bold tracking-tight text-slate-900 dark:text-slate-200 md:text-3xl ">
-                            {{ new.title }}</h1>
-                        <div class="text-sm leading-6">
-                            <dl>
-                                <dt class="sr-only">{% trans "Date" %}</dt>
-                                <dd class="absolute top-0 inset-x-0 text-slate-700 dark:text-slate-400"><time
-                                        datetime="2024-06-21T15:00:00.000Z">{{ new.publish|date:"d F Y" }}</time></dd>
-                            </dl>
-                        </div>
-                        <div class="mt-12 prose prose-slate dark:prose-dark">
-                            <div
-                                class="relative not-prose [a:not(:first-child)>&amp;]:mt-12 [a:not(:last-child)>&amp;]:mb-12 my-12 first:mt-0 last:mb-0 rounded-2xl overflow-hidden [figure>&amp;]:my-0">
-                                <img src="{{ new.image.url }}"
-                                    alt="image">
-                            </div>
-                            <div id="safe_content" class="text-slate-700 dark:text-slate-400">
-                                {{ new.body|safe }}
-                            </div>
-                        </div>
-                    </article>
-                </main>
+        <section class="pb-10 pt-20 dark:bg-dark xl:pb-20 xl:pt-[120px]">
+            <div class="container mx-auto">
+                <div class="px-4 sm:px-6 md:px-8">
+                    <div class="max-w-3xl mx-auto">
+                        <main>
+                            <article class="relative pt-10">
+                                <h1 class="text-2xl font-bold tracking-tight text-slate-900 dark:text-slate-200 md:text-3xl ">
+                                    {{ new.title }}</h1>
+                                <div class="text-sm leading-6">
+                                    <dl>
+                                        <dt class="sr-only">{% trans "Date" %}</dt>
+                                        <dd class="absolute top-0 inset-x-0 text-slate-700 dark:text-slate-400">
+                                            <time datetime="2024-06-21T15:00:00.000Z">{{ new.publish|date:"d F Y" }}</time>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="mt-12 prose prose-slate dark:prose-dark">
+                                    <div class="relative not-prose [a:not(:first-child)>&amp;]:mt-12 [a:not(:last-child)>&amp;]:mb-12 my-12 first:mt-0 last:mb-0 rounded-2xl overflow-hidden [figure>&amp;]:my-0">
+                                        <img src="{{ new.image.url }}" alt="image">
+                                    </div>
+                                    <div id="safe_content" class="text-slate-700 dark:text-slate-400">
+                                        {{ new.body|safe }}
+                                    </div>
+                                </div>
+                            </article>
+                        </main>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
     </div>
-</section>
 </div>
-</div>
+
 {% endblock content %}
