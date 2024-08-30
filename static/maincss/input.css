@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .swiper-container {
     width: 100%;
     max-width: 1000px;
