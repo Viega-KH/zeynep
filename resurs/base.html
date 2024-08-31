@@ -98,16 +98,14 @@
                     </div>
                 </nav>
                 {% if request.path == home %}
-                <div style="background-image: url('{% static 'assets/images/banner.png' %}')"
-                    class="w-full h-screen md:w-[90%] md:h-[620px] lg:h-[720px] xl:h-[820px] bg-center bg-cover bg-no-repeat">
+                <div id='banner' style="background-image: url('{% static 'assets/images/banner.png' %}')"
+                    class="w-full h-screen md:w-[80%] bg-center bg-cover bg-no-repeat">
                 </div>
-
                 {% endif %}
             </div>
         </div>
         </div>
     </section>
-
 
 
     {% block content %}
@@ -190,7 +188,13 @@
             },
         });
     </script>
-
+    <style>
+        @media (max-width: 480px) {
+            #banner {
+                background-size:780px;
+            }
+        }
+    </style>
 </body>
 
 </html>
